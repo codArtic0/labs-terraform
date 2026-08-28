@@ -20,3 +20,5 @@ resource "aws_vpc" "name" {
 - `terraform apply`: serve para criar, atualizar ou excluir recursos de infraestrutura na nuvem para que eles fiquem idênticos ao estado desejado descrito no seu código.
 
 - `terraform destroy`: serve para remover e desligar todos os recursos de infraestrutura que estão sendo gerenciados por um arquivo de estado (state file) do Terraform.
+
+- **State (`terraform.tfstate`):** é um arquivo de estado no formato JSON que mantém o controle de todas as alterações que fazemos e é usado pelo Terraform para saber se estamos criando, modificando ou excluindo algo.
