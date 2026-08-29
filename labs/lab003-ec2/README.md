@@ -1,5 +1,7 @@
 # lab003-ec2
 
+## Resource = aws_instance
+
 **O que aprendi:**
 - **EC2:** Para montar uma EC2, é preciso de 2 itens obrigatórios: `AMI ID` e Tipo da instância(t3.micro por exemplo)
 

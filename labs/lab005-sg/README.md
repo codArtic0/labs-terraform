@@ -1,5 +1,7 @@
 # lab005-sg
 
+## Resource = aws_security_group
+
 **O que aprendi:**
 - **Security Groups:** Para criar um `aws_security_group`, é obrigatório informar um `name` e um `ingress` ou `egress`. Dentro deles, devemos informar um **intervalo de portas** (`from_port`, `to_port`), o `protocol` e os `cidr_blocks` através da seguinte estrutura:
 
