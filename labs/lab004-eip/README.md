@@ -1,4 +1,4 @@
-# lab003-ec2
+# lab004-eip
 
 **O que aprendi:**
 - **EIP (Elastic IP):** Para criar um EIP, é obrigatório informar a o ID da instância através dos atributos na seguinte estrutura:
