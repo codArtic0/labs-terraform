@@ -25,3 +25,23 @@ module "ec2" {
   ec2name = "modulename"
 }
 ```
+
+- Caso queira usar um módulo em outro, é preciso configurar uma saída (`output`) dentro do módulo, e outra na `main` onde o módulo é instanciado.
+
+No `ec2.tf`:
+
+```
+output "instanceid" {
+  value = aws_instance.ec2.id
+}
+```
+
+Na `main.tf`:
+
+```
+output "moduleoutput" {
+  value = module.ec2.instanceid
+}
+```
+
+- Conseguimos pegar módulos a partir do **Terraform Registry**
